@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: edgeConfigurator API
+  title: edgeConfigurator1 API
   description: >-
     The edgeConfigurator allows remote configuration of the edgeConnector
     product family.
