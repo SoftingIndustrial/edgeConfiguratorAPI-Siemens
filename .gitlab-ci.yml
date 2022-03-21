@@ -13,11 +13,10 @@ deploy:toGithub:
     - docker
   environment:
     name: github
-    url: https://github.com/liaFeier23/api.github.io
+    url: https://github.com/liaFeier23/trySiemens
   script:
     - git lfs fetch --all
-    - git remote add public https://oauth2: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@github.com/liaFeier23/api.github.io.git
-    - git pull public main
+    - git remote add public https://oauth2:${TOKEN}@github.com/liaFeier23/trySiemens.git
     - git push public HEAD:refs/heads/${CI_COMMIT_REF_NAME}
   after_script:
     - git remote remove public
